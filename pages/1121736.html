@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>林君輔 — 實習報告</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+
+  <div class="page-wrap">
+
+    <a href="../index.html" class="back-link">
+      <span class="arrow">←</span> 返回首頁
+    </a>
+
+    <div class="page-header">
+      <h1 class="page-name">林君輔</h1>
+      <div class="page-meta" style="--accent: #f0b429;">
+        <span style="background:rgba(240,180,41,0.15);border-color:rgba(240,180,41,0.3);color:#f0b429;">學號 1121736</span>
+        <span style="background:rgba(240,180,41,0.15);border-color:rgba(240,180,41,0.3);color:#f0b429;">系統運用部</span>
+        <span style="background:rgba(240,180,41,0.15);border-color:rgba(240,180,41,0.3);color:#f0b429;">精藤股份有限公司</span>
+      </div>
+    </div>
+
+    <!-- ====== 一、實習期間完成之進度 ====== -->
+    <div class="section">
+      <div class="section-title">
+        <div class="num" style="background: linear-gradient(135deg,#b45309,#92400e);">1</div>
+        實習期間完成之進度
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="section-body">
+
+        <h4>實習初期：硬體維護基礎</h4>
+        <p>主要熟悉「報修管理中心」的操作規範與維護 SOP，建立標準化的維修思維，學習執行筆記型電腦與桌上型主機的硬體擴充（含記憶體安裝），並確認硬體在 BIOS 中正確識別。</p>
+
+        <h4>Windows 11 大規模企業升級專案</h4>
+        <p><strong>升級前環境預檢：</strong>Windows 11 對硬體安全性有嚴格要求，需提前確認使用者的電腦是否符合規格（TPM 2.0、Secure Boot）以及 C 槽空間是否足夠。</p>
+
+        <div class="img-block">
+          <img src="../image/1121736/1121736-1.png" alt="1121736-1">
+          <div class="img-caption">升級前環境預檢</div>
+        </div>
+
+        <p><strong>升級執行與錯誤排除：</strong>當 Windows Update 出現錯誤導致無法連線至更新伺服器時，執行排錯程序，包含重設 Windows Update 組件與檢查網際網路連線能力。最常出現的問題是電腦有過去使用者留下的機碼導致無法更新，需要刪除這些機碼。</p>
+
+        <!-- 圖片區：Win11 升級截圖 -->
+        <div class="img-grid">
+          <div class="img-block">
+            <img src="../image/1121736/1121736-2.jpg" alt="1121736-2">
+            <div class="img-caption">Windows Update 錯誤畫面</div>
+          </div>
+          <div class="img-block">
+            <img src="../image/1121736/1121736-6.png" alt="1121736-6">
+            <div class="img-caption">登入編輯畫面</div>
+          </div>
+        </div>
+        <!--圖片區：Win11 升級筆記圖片-->
+        <div class="img-grid">
+          <div class="img-block">
+            <img src="../image/1121736/1121736-3.jpg" alt="1121736-3">
+            <div class="img-caption">Win11 錯誤代碼排查筆記</div>
+          </div>
+          <div class="img-block">
+            <img src="../image/1121736/1121736-4.jpg" alt="1121736-4">
+            <div class="img-caption">▲ 機碼清除操作筆記（ProfileList / SID 說明）</div>
+          </div>
+          <div class="img-block">
+            <img src="../image/1121736/1121736-5.png" alt="1121736-5">
+            <div class="img-caption">▲ ProfileList 機碼編輯器畫面</div>
+          </div>
+        </div>
+
+        <h4>舊機重灌系統標準化環境建置</h4>
+        <p>針對報廢回收再利用、效能嚴重衰退的舊型設備執行系統重灌，過程分成四大步驟，並製作了一份標準 SOP 提供其他人使用：</p>
+        <ul>
+          <li>前置作業：資料資產保護與環境備份</li>
+          <li>硬體初始化與磁碟區重劃</li>
+          <li>系統派送與標準化配置</li>
+          <li>驅動程式與企業應用部署</li>
+        </ul>
+
+        <!-- 圖片區：重灌流程截圖 -->
+        <div class="img-block">
+          <img src="../image/1121736/1121736-7.png" alt="1121736-7">
+          <div class="img-caption">▲ 舊機重灌系統標準化流程</div>
+        </div>
+
+        <h4>加裝硬體需求：記憶體擴充實務</h4>
+        <p>為應對 Windows 11 對記憶體的需求，執行硬體擴充與穩定性測試。安裝前確保靜電防護（ESD），安裝後確認金手指完全入位；加裝後透過「磁碟管理」工具檢視磁碟分割區配置，合理分配 C 槽空間。</p>
+
+
+      </div>
+    </div>
+
+    <!-- ====== 二、學習 ====== -->
+    <div class="section">
+      <div class="section-title">
+        <div class="num" style="background: linear-gradient(135deg,#b45309,#92400e);">2</div>
+        學習
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="section-body">
+
+        <h4>系統部署與底層韌體管理</h4>
+        <ul>
+          <li><strong>UEFI 與安全啟動配置：</strong>學習在 BIOS 中正確配置 TPM 2.0、Secure Boot，確保設備符合 Windows 11 硬體限制的關鍵。</li>
+          <li><strong>硬體監控意識：</strong>學會透過 BIOS 監控 CPU 溫度與風扇轉速，確保設備在執行高負載的系統升級或大規模數據備份前處於健康的硬體狀態。</li>
+        </ul>
+
+        <h4>系統診斷與修復指令</h4>
+        <ul>
+          <li><strong>核心修復指令：</strong>熟練運用 <code style="background:rgba(255,255,255,0.1);padding:2px 6px;border-radius:4px;">sfc /scannow</code> 進行系統檔案完整性檢查，並學習使用 DISM 工具修復損壞的系統映像檔。</li>
+          <li><strong>日誌驅動的排錯思維：</strong>學會利用「事件檢視器（Event Viewer）」分析系統重大錯誤，如 Kernel-Power（ID 41）代表的異常重啟，或 volmgr 涉及的磁碟子系統問題。</li>
+          <li><strong>藍屏死機（BSOD）分析：</strong>學習解讀如 IRQL_NOT_LESS_OR_EQUAL 的崩潰代碼，判斷其是否與驅動程式不相容或硬體故障相關。</li>
+        </ul>
+
+        <!-- 圖片區：事件檢視器截圖 -->
+        <div class="img-block">
+          <img src="../image/1121736/1121736-9.png" alt="1121736-9">
+          <div class="img-caption">▲ 事件檢視器—系統日誌分析</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ====== 三、自我評估與心得感想 ====== -->
+    <div class="section">
+      <div class="section-title">
+        <div class="num" style="background: linear-gradient(135deg,#b45309,#92400e);">3</div>
+        自我評估與心得感想
+        <span class="toggle-icon">▾</span>
+      </div>
+      <div class="section-body">
+
+        <h4>剛進公司的震撼教育</h4>
+        <p>本來以為 IT 維運就是換換零件、重灌系統，但實際接觸後發現只要系統出問題，第一時間就是找我們。在此期間也學到了很多「教科書上沒寫」的應變能力。</p>
+
+        <h4>Windows 11 升級</h4>
+        <p>公司設備不是每台都像家用電腦一樣新，要升級 Win11 必須先確保系統規格及磁碟空間，並檢查有沒有「未知帳戶」的機碼在干預更新，確認這些底層設定都到位，否則系統升級到一半就會報錯。</p>
+
+        <h4>解決問題能力的成長</h4>
+        <ul>
+          <li>遇到 Windows Update 錯誤代碼時，從原本「找店家重灌」轉為先嘗試重設 Windows Update 服務。</li>
+          <li>當員工說「電腦會自動重開機」時，知道開啟事件檢視器追蹤 Kernel-Power ID 41。</li>
+          <li>藍屏時會去看 Stop Code，如 IRQL_NOT_LESS_OR_EQUAL 往往跟記憶體或驅動程式有關。</li>
+        </ul>
+
+        <h4>專業心態的轉變</h4>
+        <p>以前遇到 Bug 總是無法解決，現在會先自己分析、截圖、找資料，真的解不開才帶著準備好的分析結果去問。這是一份適合喜歡解決問題後有成就感的人會感興趣的工作。</p>
+
+        <!-- 圖片區：辦公環境照 -->
+        <div class="img-block">
+          <img src="../image/B-1/B-1-1.jpg" alt="B-1-1">
+          <div class="img-caption">▲ 系統運用部辦公環境</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

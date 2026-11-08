@@ -1,165 +1,407 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>林子純 — 實習報告</title>
-  <link rel="stylesheet" href="../css/style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>林子純 — 實習報告</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <div class="bg-grid"></div>
-  <div class="bg-orb orb1"></div>
-  <div class="bg-orb orb2"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-orb orb1"></div>
+    <div class="bg-orb orb2"></div>
 
-  <div class="page-wrap">
+    <div class="page-wrap">
 
-    <a href="../index.html" class="back-link">
-      <span class="arrow">←</span> 返回首頁
-    </a>
+        <a href="../index.html" class="back-link">
+            <span class="arrow">←</span> 返回首頁
+        </a>
 
-    <!-- 個人頁首 -->
-    <div class="page-header">
-      <h1 class="page-name">林子純</h1>
-      <div class="page-meta">
-        <span>學號 1121723</span>
-        <span>整合研發部</span>
-        <span>精藤股份有限公司</span>
-      </div>
-    </div>
-
-    <!-- ====== 一、實習期間完成之進度 ====== -->
-    <div class="section">
-      <div class="section-title">
-        <div class="num">1</div>
-        實習期間完成之進度
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="section-body">
-
-        <h4>① 熟悉公司架構（DA、DB、DAL）實做練習</h4>
-        <p>根據公司提供的文件自學新的語法與架構，涵蓋 React、JavaScript、Oracle 等技術，奠定後續開發工作的基礎。</p>
-
-        <h4>② WinForm 升級</h4>
-        <p>主要任務是在升級版本時，將因版本差異導致跑版的畫面調整為與舊版完全一致。這是一個重複性較高的任務，過程中培養了對畫面細節的敏銳度與耐心。</p>
-
-        <!-- 圖片區：新舊版畫面對比 -->
-        <div class="img-grid">
-          <div class="img-block">
-            <img src="../image/1121723/1121723-1.png" alt="1121723-1">
-            <div class="img-caption">畫面調整</div>
-          </div>
-          
+        <!-- 個人頁首 -->
+        <div class="page-header">
+            <h1 class="page-name">林子純</h1>
+            <div class="page-meta">
+                <span>學號 1121723</span>
+                <span>整合研發部</span>
+                <span>精藤股份有限公司</span>
+            </div>
         </div>
 
-        <h4>③ 日翊廠商商品清單批次匯入頁 — 資料庫欄位新增</h4>
-        <p>任務僅需新增一個資料庫欄位，但這是實習以來第一次接觸需要閱讀規格書的需求。在實際修改時發現 DA 架構中新增欄位必須在 XML 裡同步更新多處，讓我深刻體會到全面理解架構的重要性。</p>
+        <!-- ====== 一、實習期間完成之進度 ====== -->
+        <div class="section">
+            <div class="section-title">
+                <div class="num">1</div>
+                實習期間完成之進度
+                <span class="toggle-icon">▾</span>
+            </div>
+            <div class="section-body">
+                <h4>① 工作處理系統-訊息</h4>
+                <p>之前的任務都是主管訂好功能樣式我們直接開發，這是第一次我們需要從UI/UX開始設計，接著撰寫相關需求文件，最後進行開發，整個過程都需要考慮到使用者的使用體驗，在過程中反覆調整操作邏輯，雖然剛開始覺得有點困難和複雜，但看到功能上線後覺得非常有成就感。</p>
 
-        <!-- 圖片區：資料庫欄位新增截圖 -->
-        <div class="img-block">
-            <img src="../image/1121723/1121723-3.png" alt="1121723-3">
-            <div class="img-caption">畫面</div>
-          </div>
-        <div class="img-block">
-          <img src="../image/1121723/1121723-2.png" alt="1121723-2">
-          <div class="img-caption">▲ 確認新增一個欄位後仍能正確讀取檔案並儲存到資料庫</div>
+                <!-- 圖片區：工作處理系統-訊息 -->
+                <div class="img-grid">
+                    <div class="img-block">
+                        <img src="../image/1121723/1121723-10.png" alt="1121723-10">
+                        <div class="img-caption">▲ 訊息中心</div>
+                    </div>
+                </div>
+
+                <h4>② 全網_BAC商務雲_導入帳務ECF系統</h4>
+                <p>這個專案是全新專案，裡面完全其他支功能可以參考，DB還是使用我不太熟悉的DAL進行存取，所以我回過頭找剛入職時公司提供的文件和練習專案來複習，多虧了有剛入職時的基礎，所以看著文件我才能夠快速恢復記憶和上手。</p>
+
+                <!-- 圖片區：全網_BAC商務雲_導入帳務ECF系統 -->
+                <div class="img-grid">
+                    <div class="img-block">
+                        <img src="../image/1121723/1121723-8.png" alt="1121723-8">
+                        <div class="img-caption">▲ 商務雲</div>
+                    </div>
+                </div>
+
+                <h4>③ WKPS 系統開發與維護</h4>
+                <p>我進行了多個功能的新開發與維護，透過不斷跟AI進行互動，我已經能夠精準且快速的下prompt，使用AI幫我完成多項任務所需的調整。</p>
+
+                <!-- 圖片區：WKPS 系統開發與維護 -->
+                <div class="img-block">
+                    <img src="../image/1121723/1121723-11.png" alt="1121723-11">
+                    <div class="img-caption">▲ WKPS 系統開發與維護</div>
+                </div>
+
+                <h4>④ RMD.2.1.5_送金常用廠商維護</h4>
+                <p>這個任務是為了幫助使用者可以簡化每次輸入作業而新增的功能。因為已經熟悉這種類型的開發流程，所以很順利地完成了，過程中遇到規格書中疑惑的部分，我也已經可以順暢地跟SA進行溝通、確認具體操作方式。</p>
+
+                <!-- 圖片區：RMD.2.1.5_送金常用廠商維護 -->
+                <div class="img-block">
+                    <img src="../image/1121723/1121723-9.png" alt="1121723-9">
+                    <div class="img-caption">▲ RMD.2.1.5</div>
+                </div>
+
+                <h4>⑤ WKPS任務流程與任務立案調整(Draft)</h4>
+                <p>這是我的第一支全流程開發任務，主管模擬客戶的角色丟出需求，我需要針對需求進行分析與設計，再撰寫規格文件，最後進行開發。</p>
+                <p>剛開始的需求確認對我來說不是簡單的事，需要仔細從多種解決方法裡找出最適當的方案跟主管討論，這支任務其實主管已經有給我一點方向，下一支任務我應該再多一些這方面的練習。並且之前都是寫給AI看的文件比較多，這次主管提醒我除了要寫給AI看，還有另一種則是要給客戶看的，怎麼使用簡單清楚的表達讓客戶明白很重要，而我的內容經常很難讓人一眼抓到重點，還需要多加練習。</p>
+
+                <!-- 圖片區：WKPS任務流程與任務立案調整(Draft) -->
+                <div class="img-grid">
+                    <div class="img-block">
+                        <img src="../image/1121723/1121723-6.png" alt="1121723-6">
+                        <div class="img-caption">▲ WKPS任務流程與任務立案調整(Draft)（1）</div>
+                    </div>
+                    <div class="img-block">
+                        <img src="../image/1121723/1121723-7.png" alt="1121723-7">
+                        <div class="img-caption">▲ WKPS任務流程與任務立案調整(Draft)（2）</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <h4>④ WKPS 系統維護開發</h4>
-        <p><strong>負責開發「部門維護功能」：</strong>首次接觸以 React 開發的第二代架構，也是第一次嘗試用 AI 代理進行開發。核心在於連結部門樹狀圖以顯示層級關係，過程中學會如何清晰地向 AI 表達需求。</p>
-
-        <!-- 圖片區：WKPS 部門維護畫面 -->
-        <div class="img-block">
-          <img src="../image/1121723/1121723-4.png" alt="1121723-4">
-          <div class="img-caption">▲ WKPS 部門維護功能畫面</div>
+        <!-- ====== 二、學習 ====== -->
+        <div class="section">
+            <div class="section-title">
+                <div class="num">2</div>
+                學習
+                <span class="toggle-icon">▾</span>
+            </div>
+            <div class="section-body">
+                <ul class="point-list">
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">問題分析與解決能力</span>
+                                    <span class="point-summary">逐漸掌握閱讀錯誤訊息、設置中斷點等技巧，建立清晰的問題分析流程。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>透過各項維護工作，我逐漸學會依據錯誤狀況來分析問題來源，並比對現有程式碼找出關鍵錯誤點。在實習初期遇到報錯時我完全無從下手，只能請求學長協助；但隨著經驗的累積，以及觀摩學長除錯的方式，我也逐漸掌握閱讀錯誤訊息、設置中斷點等技巧。</p>
+                                <p>這些實務經驗幫助我建立起清晰的問題分析流程，在面對複雜情境時能有條理地拆解並逐步解決，也提升了我獨立處理系統問題的信心與能力。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">Git版本控制</span>
+                                    <span class="point-summary">首次接觸 Git，透過 AI 輔助自學，從 KM 知識庫、WKPS 到使用手冊均採用 Git 多人協作管理版本。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>這次實習是第一次接觸 Git 進行版本控制。從 KM 知識庫建立、WKPS 系統維護到使用手冊開發，由於皆為多人協作，均採用 Git 管理版本。</p>
+                                <p>我透過 AI 輔助自學，逐漸熟悉 Git 的使用方式，也理解版本控制在多人協作與軟體開發中的重要角色，為未來的開發工作奠定良好的版本管理基礎。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">提問與溝通能力</span>
+                                    <span class="point-summary">學會先釐清問題再提問，培養清楚有條理表達想法的能力。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>在實習前我較不擅長主動表達，但在實習期間，遇到問題如果不主動詢問便難以推進工作，功能修改也需要與 SA 確認需求細節。在這樣的環境中，我逐漸學會如何先釐清問題再提問，也培養出更清楚、有條理地表達自身想法的能力。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">運用AI加速開發</span>
+                                    <span class="point-summary">學會先分析問題、縮小範圍再提問，並在 AI 回應偏離主軸時及時修正方向。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>部門主管非常鼓勵我們能善用 AI 加速開發，而學會靈活運用 AI 而非被 AI 主導，正是這個時代必備的能力之一。</p>
+                                <p>透過大量實作練習，我學會先分析真正的問題、縮小問題範圍再進行提問，而非直接把大量程式碼丟給 AI 自由發揮。當發現 AI 回應開始偏離主軸時，也需要及時察覺並修正方向，避免走偏太遠。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">功能測試與驗證</span>
+                                    <span class="point-summary">設想各種使用者操作情境，針對不同條件進行驗證，確保系統正確運作。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>剛開始我以為只要依照規格執行、確認符合說明就好了，但實際接觸後才發現，測試工作遠不止於此——需要設想各種使用者操作情境，針對不同條件進行驗證，確保系統在各種狀況下均能正確運作。</p>
+                                <p>如果測試中出現錯誤，也應該要進一步釐清是邏輯還是結構面的問題，才能快速解決錯誤。</p>
+                            </div>
+                        </details>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <p><strong>協助測試個案：</strong>測試工作需從不同使用者角度出發，構想各種情境進行驗證，才能完成一份完整的測試。</p>
-
-        <!-- 圖片區：測試個案截圖 -->
-        <div class="img-block">
-          <img src="../image/1121723/1121723-5.png" alt="1121723-5">
-          <div class="img-caption">▲ 測試個案紀錄</div>
+        <!-- ====== 三、過程中扮演的角色 ====== -->
+        <div class="section">
+            <div class="section-title">
+                <div class="num">3</div>
+                過程中扮演的角色
+                <span class="toggle-icon">▾</span>
+            </div>
+            <div class="section-body">
+                <p>在實習期間，我主要扮演「學習者」與「執行者」的雙重角色。</p>
+                <div class="highlight-box">
+                    <span class="tag">學習者</span> 在面對陌生的技術架構（React、Git、公司 DA/DB/DAL 框架）與開發工具，持續透過自學、閱讀文件及觀摩學長的方式建立知識基礎，遇到瓶頸時也主動提問，逐步建立解決問題的能力。
+                </div>
+                <div class="highlight-box">
+                    <span class="tag">執行者</span> 獨立負責任務的修改與開發，從理解需求、與 AI 協作實作，到問題排查與邏輯校正，全程主導進度；同時參與 WKPS 使用手冊的建置與個案測試工作，按時完成交付成果。
+                </div>
+                <div class="highlight-box">
+                    <span class="tag">溝通橋接者</span> 在功能開發與測試的過程中，需與 SA 確認需求細節，也需要在發現問題時及時反映給提出人，扮演開發端與需求端之間的溝通角色，確保開發方向正確且符合預期。
+                </div>
+                <div class="highlight-box">
+                    <span class="tag">AI 協作者</span> 嘗試用 AI 代理進行開發，學習要如何主導 AI 的輸出方向，而不是被 AI 的建議牽著走，學習在人機協作中找到平衡。
+                </div>
+            </div>
         </div>
 
-        <h4>⑤ WKPS 使用手冊開發</h4>
-        <p>採用 AI 全程開發。有了前期 WKPS 維護開發的經驗，能夠制訂可讓 AI 讀取跟遵循的操作規則，也意識到需持續提升對 AI 的掌控能力。</p>
+        <!-- ====== 四、自我評估與心得感想 ====== -->
+        <div class="section">
+            <div class="section-title">
+                <div class="num">4</div>
+                自我評估與心得感想
+                <span class="toggle-icon">▾</span>
+            </div>
+            <div class="section-body">
+                <h4>自我評估</h4>
+                <ul class="point-list">
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">整體成長</span>
+                                    <span class="point-summary">從對業界開發流程幾乎陌生的學生，成長為能獨立承接任務、完成交付的開發者。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>整體而言，這次實習讓我從一個對業界開發流程幾乎陌生的學生，逐步成長為能夠獨立承接任務、完成交付的開發者，也讓我對未來想投入的方向有了更清楚的認識。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">技術面的適應</span>
+                                    <span class="point-summary">初期不適應規格書與既有系統，需要在公司裡快速理解既有系統再進行修改與開發。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>在技術方面，一開始的其實非常不適應。剛進入公司時，面對實際專案的架構、規格書以及開發流程，常常會有看不懂、不知道從哪裡開始的情況。尤其是第一次接觸 DA 架構、實際串接 API、閱讀既有程式碼時，與在學校做專案的感受完全不同。學校的程式大多是自己從零開始撰寫，因此對整體邏輯都非常熟悉；但在公司裡，更多時候是需要快速理解既有系統，再接著進行修改與開發，這對我來說是一個很大的挑戰。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">問題解決能力</span>
+                                    <span class="point-summary">從只能依賴他人協助，進步到能自行下中斷點除錯、看懂錯誤訊息。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>不過透過主管與同事的協助，以及自己不斷練習與查資料，我開始慢慢能夠理解整體開發流程，也逐漸學會如何閱讀規格書、追蹤錯誤原因以及分析問題。從一開始只會依賴別人協助，到後來能夠自行下中斷點除錯、看懂錯誤訊息、嘗試提出自己的解決方式，我認為自己的技術理解能力與問題解決能力都有非常明顯的提升。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">工具與 AI 協作</span>
+                                    <span class="point-summary">學會 Git 與 AI 輔助開發，也理解 AI 不是完全可靠的答案來源，需要開發者具備判斷能力。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>另外，在工具的使用上，我也學到了許多在學校較少接觸的內容。例如 Git 版本控制、AI 輔助開發工具等，這些都讓我更貼近目前業界的開發模式。尤其是在 AI 協作方面，我學會如何利用 AI 協助自己整理思路、產生程式範例以及加速除錯流程，但同時也理解到 AI 並不是完全可靠的答案來源，而是需要開發者具備判斷能力，才能真正有效率地運用。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">軟實力</span>
+                                    <span class="point-summary">最大的成長在溝通與提問，學會整理問題並在提問前先自行嘗試與查找資料。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>在軟實力方面，我認為自己最大的成長是在「溝通」與「提問能力」。一開始因為擔心自己問的問題太基礎，常常不敢開口，但後來我逐漸發現，在職場中比起不問導致方向錯誤，更重要的是能夠及時確認需求與理解內容。因此我開始學習如何整理問題、清楚表達自己的卡點，以及如何在提問前先自行嘗試與查找資料。我覺得這不只是技術上的成長，更是在職場適應能力上的重要進步。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">待加強之處</span>
+                                    <span class="point-summary">面對全新規格書或大型架構仍需較長時間理解，並希望精進提示詞的撰寫。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>當然，我也認為自己還有許多需要進步的地方。例如在面對全新的規格書或大型架構時，我仍然需要較長的時間才能完全理解；有時候在問題分析上，也容易因為經驗不足而忽略細節。此外，在 AI 協作方面，我也希望未來能更深入學習如何撰寫精準且高效率的提示詞，讓 AI 能真正成為提升工作效率的工具，而不是單純依賴它產生答案。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">總結</span>
+                                    <span class="point-summary">更了解自己的不足與努力方向，這段經驗是從學生轉變為職場工作者的重要過程。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>這次實習讓我更了解自己的不足，也讓我知道未來應該努力的方向。我相信這些經驗不只是技術上的累積，更是幫助我從學生逐漸轉變成職場工作者的重要過程。</p>
+                            </div>
+                        </details>
+                    </li>
+                </ul>
 
-        <!-- 圖片區：WKPS 使用手冊 -->
-        <div class="img-grid">
-          <div class="img-block">
-            <img src="../image/1121723/1121723-6.png" alt="1121723-6">
-            <div class="img-caption">▲ 給 AI 的操作規範</div>
-          </div>
-
-          <div class="img-block">
-            <img src="../image/1121723/1121723-7.png" alt="1121723-7">
-            <div class="img-caption">▲ WKPS 使用手冊網頁</div>
-          </div>
+                <h4>心得感想</h4>
+                <ul class="point-list">
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">對學習與職場的新理解</span>
+                                    <span class="point-summary">最大的收穫不只是技術能力的提升，而是對「學習」與「職場」有了全新的理解。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>在這次的實習過程中，我最大的收穫其實不只是技術能力的提升，而是對「學習」以及「職場」有了全新的理解。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">職場的學習方式</span>
+                                    <span class="point-summary">沒有人會一步一步教，需要自己快速理解問題、主動找答案，並在期限內完成任務。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>在學校時，學習通常有明確的範圍與步調，只要按照課程進度完成作業與專題，就能慢慢掌握知識。但真正進入公司後，我才發現職場上的學習方式完全不同。很多時候沒有人會一步一步教你，而是需要自己快速理解問題、主動尋找答案，並且在有限時間內完成任務。這種學習方式讓我一開始感到非常有壓力，也曾經懷疑自己是否真的跟得上。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">學校與業界的差距</span>
+                                    <span class="point-summary">因看不懂規格與架構而進度落後，進而養成查文件、看程式碼與記錄筆記的習慣。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>尤其是在剛開始接觸正式專案時，常常會因為看不懂規格、不了解系統架構，導致開發進度落後。當時我最大的感受就是「學校與業界真的差很多」。但也因為這樣的環境，我開始學習如何主動面對問題，而不是等待別人給答案。我漸漸養成查文件、看程式碼、整理問題以及記錄筆記的習慣，也開始理解到「學習能力」其實比單純會多少技術更加重要。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">主管與同事的帶領</span>
+                                    <span class="point-summary">他們不只給答案，也帶著一起分析問題與思考，培養日後面對問題的能力。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>另外，我也很感謝實習期間遇到的主管與同事。當我遇到問題時，他們不只是直接給答案，而是會帶著我一起分析問題、理解原因，甚至教我如何思考。這讓我學到的不只是解決當下的錯誤，而是培養未來面對問題時的思考能力。我覺得這種經驗是學校課堂中比較難真正獲得的。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">對 AI 輔助開發的體悟</span>
+                                    <span class="point-summary">AI 無法取代思考，真正重要的是知道自己真正需要什麼。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>在 AI 輔助開發的過程中，我也有很深的體悟。現在 AI 工具確實能幫助開發者提高效率，但它並不能完全取代人的思考能力。如果自己沒有理解問題本身，即使 AI 給出答案，也未必知道是否正確。很多時候，真正重要的不是「AI 能不能幫你寫程式」，而是「你知不知道自己真正需要什麼」。我認為這也是未來開發者很重要的一項能力。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">責任感與時間管理</span>
+                                    <span class="point-summary">在公司裡每個人的進度會互相影響，需要更有責任感地安排工作與時間。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>除此之外，我也開始理解職場中的責任感與時間管理。學校的作業如果延期，影響的通常只有自己；但在公司裡，每個人的進度都會互相影響，因此需要更有責任感地安排自己的工作與時間。我覺得這讓我的心態成熟了許多，也開始真正意識到「工作」與「學習」之間的差異。</p>
+                            </div>
+                        </details>
+                    </li>
+                    <li>
+                        <details class="point">
+                            <summary>
+                                <span class="point-head">
+                                    <span class="point-title">整體收穫</span>
+                                    <span class="point-summary">提前體驗職場環境與團隊合作，期許持續精進技術與溝通能力。</span>
+                                </span>
+                            </summary>
+                            <div class="point-detail">
+                                <p>整體而言，這段實習經驗不只是讓我學到開發技術，更讓我提前體驗真正的職場環境，理解業界的工作模式以及團隊合作的重要性。我認為這段經驗對我未來進入職場有非常大的幫助。未來我也希望能持續精進自己的技術能力與溝通能力，讓自己在正式進入職場後，能更快適應並持續成長。</p>
+                            </div>
+                        </details>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-      </div>
-    </div>
+    </div><!-- /page-wrap -->
 
-    <!-- ====== 二、學習 ====== -->
-    <div class="section">
-      <div class="section-title">
-        <div class="num">2</div>
-        學習
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="section-body">
-        <ul>
-          <li><strong>問題分析與解決能力：</strong>逐漸掌握閱讀錯誤訊息、設置中斷點等技巧，建立清晰的問題分析流程。</li>
-          <li><strong>Git 版本控制：</strong>首次接觸 Git，透過 AI 輔助自學，從 KM 知識庫、WKPS 到使用手冊均採用 Git 多人協作管理版本。</li>
-          <li><strong>提問與溝通能力：</strong>學會先釐清問題再提問，培養清楚有條理表達想法的能力。</li>
-          <li><strong>運用 AI 加速開發：</strong>學會先分析問題、縮小範圍再提問，並在 AI 回應偏離主軸時及時修正方向。</li>
-          <li><strong>功能測試與驗證：</strong>設想各種使用者操作情境，針對不同條件進行驗證，確保系統正確運作。</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- ====== 三、過程中扮演的角色 ====== -->
-    <div class="section">
-      <div class="section-title">
-        <div class="num">3</div>
-        過程中扮演的角色
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="section-body">
-        <div class="highlight-box">
-          <span class="tag">學習者</span> 面對陌生技術架構，持續透過自學、閱讀文件及觀摩學長建立知識基礎。
-        </div>
-        <div class="highlight-box">
-          <span class="tag">執行者</span> 獨立負責任務的修改與開發，從理解需求、AI 協作實作到問題排查全程主導。
-        </div>
-        <div class="highlight-box">
-          <span class="tag">溝通橋接者</span> 在開發與測試過程中與 SA 確認需求細節，確保開發方向正確且符合預期。
-        </div>
-        <div class="highlight-box">
-          <span class="tag">AI 協作者</span> 嘗試用 AI 代理進行開發，學習主導 AI 的輸出方向，在人機協作中找到平衡。
-        </div>
-      </div>
-    </div>
-
-    <!-- ====== 四、自我評估與心得感想 ====== -->
-    <div class="section">
-      <div class="section-title">
-        <div class="num">4</div>
-        自我評估與心得感想
-        <span class="toggle-icon">▾</span>
-      </div>
-      <div class="section-body">
-        <h4>自我評估</h4>
-        <p>整體而言，從一個對業界開發流程幾乎陌生的學生，逐步成長為能夠獨立承接任務、完成交付的開發者。在技術方面，從讀不懂規格書到能自行下中斷點除錯；在軟實力方面，溝通與提問能力有明顯的成長。</p>
-
-        <h4>心得感想</h4>
-        <p>最大的收穫是對「學習」本身有了新的認識。在 AI 輔助開發的過程中，深刻體悟到：AI 是強大的工具，但無法取代對問題本質的理解。需要先想清楚自己要什麼，才能有效地引導 AI 給出有用的答案。</p>
-      </div>
-    </div>
-
-  </div><!-- /page-wrap -->
-
-  <script src="../js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

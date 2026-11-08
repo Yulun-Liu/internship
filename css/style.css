@@ -359,6 +359,53 @@ body {
 }
 
 /* ==============================
+   Point List（重點條列 + 點擊展開完整內容）
+============================== */
+.section-body ul.point-list > li {
+    padding: 0;
+}
+.section-body ul.point-list > li::before {
+    display: none;
+}
+
+.point > summary {
+    display: flex; align-items: flex-start; gap: 10px;
+    padding: 12px 12px 12px 8px;
+    cursor: pointer; list-style: none; user-select: none;
+    border-radius: 8px;
+    transition: background var(--transition);
+}
+.point > summary::-webkit-details-marker { display: none; }
+.point > summary::before {
+    content: '›';
+    flex-shrink: 0; width: 14px; text-align: center;
+    color: var(--accent); font-weight: 700; line-height: 1.7;
+    transition: transform var(--transition);
+}
+.point[open] > summary::before { transform: rotate(90deg); }
+.point > summary:hover { background: rgba(59,130,246,0.06); }
+
+.point-head {
+    display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0;
+}
+.point-title {
+    font-family: var(--font-serif); font-size: 0.95rem;
+    font-weight: 600; color: var(--white);
+}
+.point-summary {
+    font-size: 0.86rem; line-height: 1.7; color: var(--gray);
+}
+.point[open] .point-summary { color: #c8d3e0; }
+
+.point-detail {
+    margin: 0 0 14px 32px; padding: 4px 0 4px 16px;
+    border-left: 2px solid rgba(59,130,246,0.35);
+    font-size: 0.9rem;
+}
+.point-detail ul { margin-bottom: 12px; }
+.point-detail ul:last-child { margin-bottom: 0; }
+
+/* ==============================
    Image Placeholder / Actual Images
 ============================== */
 
@@ -427,4 +474,5 @@ body {
   .students-grid { grid-template-columns: 1fr; }
   .page-wrap { padding: 32px 16px 56px; }
   .section-body { padding: 18px; }
+  .point-detail { margin-left: 18px; padding-left: 12px; }
 }
